@@ -1,15 +1,12 @@
 pipeline {
-    agent any
+    agent {
+        label 'ubuntu'
+    }
 
     stages {
         stage('Checkout everything') {
             steps {
                 bash -x 01-checkout-everything.sh
-            }
-        }
-        stage('Breaking down the repositories') {
-            steps {
-                bash -x 02-explode-current-monorepo.sh
             }
         }
         stage('Breaking down the repositories') {
