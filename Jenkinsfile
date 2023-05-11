@@ -1,12 +1,10 @@
 pipeline {
-    agent {
-        label 'ubuntu'
-    }
+    agent any
 
     stages {
         stage('Checkout everything') {
             steps {
-                bash -xv checkout-everything.sh
+                bash -xv 01-checkout-everything.sh
             }
         }
         stage('Breaking down the repositories') {
