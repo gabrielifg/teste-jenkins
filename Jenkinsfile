@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout everything') {
             steps {
-                bash -xv 01-checkout-everything.sh
+                bash -xv checkout-everything.sh
             }
         }
         stage('Breaking down the repositories') {
