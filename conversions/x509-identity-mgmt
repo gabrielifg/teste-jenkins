@@ -1,6 +1,0 @@
-sed 's|[x509 identity-mgmt](https://bitbucket.cpqd.com.br/projects/DOJOT/repos/dojot/browse/iam/x509-identity-mgmt?at=refs%2Fheads%2Frelease%2Fv1.0.0)||g' -i ../html-docs/source/components-and-apis.html
-sed 's|https://bitbucket.cpqd.com.br/projects/DOJOT/repos/dojot/browse/iam/x509-identity-mgmt?at=refs%2Fheads%2Frelease%2Fv1.0.0|../x509-identity-mgmt/doc-x509-identity-mgmt.html|g' -i ../html-docs/source/components-and-apis.html
-sed 's|https://bitbucket.cpqd.com.br/projects/DOJOT/repos/dojot/browse/iam/x509-identity-mgmt/js/apidocs/openapi-v1.yml?at=feature%2FDJINV-354-apiary-1.0.0|../x509-identity-mgmt/api/api-x509-identity-mgmt.html|g' -i ../html-docs/source/components-and-apis.html
-
-redoc-cli bundle -o ../html-docs/x509-identity-mgmt/api/api-x509-identity-mgmt.html ../new-structure/apps/x509-identity-mgmt/js/apidocs/openapi-v1.yml
-pandoc --css=estilo.css -s ../new-structure/apps/x509-identity-mgmt/README.md -o ../html-docs/x509-identity-mgmt/doc-x509-identity-mgmt.html
